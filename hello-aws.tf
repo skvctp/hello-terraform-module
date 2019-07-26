@@ -6,5 +6,6 @@ provider "aws" {
 // This is an AWS resource block that creates an EC2 instance
 resource "aws_instance" "example" {
   ami           = "ami-2757f631"
-  instance_type = "t2.${var.size}" // use a variable here
+  instance_type = "t2.${var.size}"
 }
+
